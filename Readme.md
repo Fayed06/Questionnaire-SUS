@@ -18,10 +18,10 @@ Aplikasi ini dikembangkan sebagai bagian dari penelitian untuk mengevaluasi usab
 
 ## Screenshot
 ### Tampilan Awal Aplikasi
-![Tampilan Awal](https://drive.google.com/file/d/1E6kKKxV92ih8xm2zZ6ctWQ-KjP5O6k5X/view?usp=sharing)
+![Tampilan Awal](https://drive.google.com/uc?export=view&id=1E6kKKxV92ih8xm2zZ6ctWQ-KjP5O6k5X)
 
 ### Tampilan Hasil Setelah Submit
-![Hasil SUS](https://drive.google.com/file/d/1W1EOFFoOCkjochnxIx-4zN4vVmttVCjo/view?usp=drive_link)
+![Hasil SUS](https://drive.google.com/uc?export=view&id=1W1EOFFoOCkjochnxIx-4zN4vVmttVCjo)
 
 ## Pengembangan
 Aplikasi ini dikembangkan menggunakan HTML, CSS (Bootstrap), dan JavaScript.
