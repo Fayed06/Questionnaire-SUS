@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Include meta information, set viewport defaults, load CSS sheet -->
+    <meta charset="utf-8">
+    <meta name="description" content="System Usability Scale (SUS) Score Calculator. Enter scores in ten categories using this web form to obtain a SUS score.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- add this nice theme https://bootswatch.com/flatly/ -->
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous" id="css-link">
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+    
+    <title>Kuesioner System Usability Scale (SUS)</title>
+</head>
+
+
+<body>
+    <div class="container-fluid py-3 px-15">
+                <h2 style="text-align: center;">Kuesioner System Usability Scale (SUS) </h2>
+                <p style="text-align: center;">Aplikasi ini berfungsi untuk melakukan pengujian Sytem Usability Scale terhadapa aplikasi yang sedang ingin dikembangkan dan di uji</p>
+            
+        <!-- responsive two column layout -->
+        <div class="row">
+        
+            <!-- form div -->
+            <div id="left-col" class="col-md-8" style="background-color:white;">
+            <form id="sus-form">
+            
+            <!-- SUS QUESTIONS TABLE -->
+            <table id="sus-tab" class="table table-striped" style="border: 0px; ">
+                <tr><th>Pertanyaan</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th></tr>
+                <tr><th colspan="2" style="text-align: right">Sangat tidak setuju</th><th></th><th></th><th></th><th>Sangat setuju</th></tr>
+                <!-- QUESTION 1-->
+                <tr>
+                    <td>1. Saya pikir saya akan menggunakan aplikasi ini lagi.</td>
+                    <td><input type="radio" id="q1-1" name="sus-q1" value="1"></td>
+                    <td><input type="radio" id="q1-2" name="sus-q1" value="2"></td>
+                    <td><input type="radio" id="q1-3" name="sus-q1" value="3"></td>
+                    <td><input type="radio" id="q1-4" name="sus-q1" value="4"></td>
+                    <td><input type="radio" id="q1-5" name="sus-q1" value="5"></td>
+                </tr>
+
+                <!-- QUESTION 2-->
+                <tr>
+                    <td>2. Saya merasa aplikasi ini rumit untuk digunakan.</td>
+                    <td><input type="radio" id="q2-1" name="sus-q2" value="1"></td>
+                    <td><input type="radio" id="q2-2" name="sus-q2" value="2"></td>
+                    <td><input type="radio" id="q2-3" name="sus-q2" value="3"></td>
+                    <td><input type="radio" id="q2-4" name="sus-q2" value="4"></td>
+                    <td><input type="radio" id="q2-5" name="sus-q2" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 3-->
+                <tr>
+                    <td>3. Saya merasa aplikasi ini mudah digunakan.</td>
+                    <td><input type="radio" id="q3-1" name="sus-q3" value="1"></td>
+                    <td><input type="radio" id="q3-2" name="sus-q3" value="2"></td>
+                    <td><input type="radio" id="q3-3" name="sus-q3" value="3"></td>
+                    <td><input type="radio" id="q3-4" name="sus-q3" value="4"></td>
+                    <td><input type="radio" id="q3-5" name="sus-q3" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 4-->
+                <tr>
+                    <td>4. Saya membutuhkan bantuan orang teknis untuk menggunakan aplikasi ini.</td>
+                    <td><input type="radio" id="q4-1" name="sus-q4" value="1"></td>
+                    <td><input type="radio" id="q4-2" name="sus-q4" value="2"></td>
+                    <td><input type="radio" id="q4-3" name="sus-q4" value="3"></td>
+                    <td><input type="radio" id="q4-4" name="sus-q4" value="4"></td>
+                    <td><input type="radio" id="q4-5" name="sus-q4" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 5-->
+                <tr>
+                    <td>5. Saya menemukan fitur pada aplikasi ini diintegrasikan dengan baik.</td>
+                    <td><input type="radio" id="q5-1" name="sus-q5" value="1"></td>
+                    <td><input type="radio" id="q5-2" name="sus-q5" value="2"></td>
+                    <td><input type="radio" id="q5-3" name="sus-q5" value="3"></td>
+                    <td><input type="radio" id="q5-4" name="sus-q5" value="4"></td>
+                    <td><input type="radio" id="q5-5" name="sus-q5" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 6-->
+                <tr>
+                    <td>6. Saya pikir terlalu banyak ketidak-konsistenan pada aplikasi ini.</td>
+                    <td><input type="radio" id="q6-1" name="sus-q6" value="1"></td>
+                    <td><input type="radio" id="q6-2" name="sus-q6" value="2"></td>
+                    <td><input type="radio" id="q6-3" name="sus-q6" value="3"></td>
+                    <td><input type="radio" id="q6-4" name="sus-q6" value="4"></td>
+                    <td><input type="radio" id="q6-5" name="sus-q6" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 7-->
+                <tr>
+                    <td>7. Saya membayangkan orang lain dapat dengan mudah untuk menggunakan aplikasi ini dengan sangat cepat.</td>
+                    <td><input type="radio" id="q7-1" name="sus-q7" value="1"></td>
+                    <td><input type="radio" id="q7-2" name="sus-q7" value="2"></td>
+                    <td><input type="radio" id="q7-3" name="sus-q7" value="3"></td>
+                    <td><input type="radio" id="q7-4" name="sus-q7" value="4"></td>
+                    <td><input type="radio" id="q7-5" name="sus-q7" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 8-->
+                <tr>
+                    <td>8. Saya menemukan aplikasi ini sangat rumit untuk digunakan.</td>
+                    <td><input type="radio" id="q8-1" name="sus-q8" value="1"></td>
+                    <td><input type="radio" id="q8-2" name="sus-q8" value="2"></td>
+                    <td><input type="radio" id="q8-3" name="sus-q8" value="3"></td>
+                    <td><input type="radio" id="q8-4" name="sus-q8" value="4"></td>
+                    <td><input type="radio" id="q8-5" name="sus-q8" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 9-->
+                <tr>
+                    <td>9. Saya merasa percaya diri dalam menggunakan aplikasi ini.</td>
+                    <td><input type="radio" id="q9-1" name="sus-q9" value="1"></td>
+                    <td><input type="radio" id="q9-2" name="sus-q9" value="2"></td>
+                    <td><input type="radio" id="q9-3" name="sus-q9" value="3"></td>
+                    <td><input type="radio" id="q9-4" name="sus-q9" value="4"></td>
+                    <td><input type="radio" id="q9-5" name="sus-q9" value="5"></td>
+                </tr>
+                
+                <!-- QUESTION 10-->
+                <tr>
+                    <td>10. Saya perlu belajar sebelum menggunakan aplikasi ini.</td>
+                    <td><input type="radio" id="q10-1" name="sus-q10" value="1"></td>
+                    <td><input type="radio" id="q10-2" name="sus-q10" value="2"></td>
+                    <td><input type="radio" id="q10-3" name="sus-q10" value="3"></td>
+                    <td><input type="radio" id="q10-4" name="sus-q10" value="4"></td>
+                    <td><input type="radio" id="q10-5" name="sus-q10" value="5"></td>
+                </tr>
+                
+            </table>
+            <div class="text-right">
+                <button type="button" id="submit-btn" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+
+        </form>   
+    </div>
+            
+            <!-- info div --> 
+            <div id="right-col" class="col-md-4">
+                    
+                    <!-- wrap a Dark Mode toggle switch inside a couple of HRs -->
+                    <hr>
+                    <!-- div with CSS toggle switch -->
+                    <div style="margin-left: 3px;" class="form-group">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="css-mode" >
+                            <label class="custom-control-label" for="css-mode"><b>Dark Mode</b></label>
+                        </div>
+                    </div>
+                    <hr>
+                    
+                    <!-- div with guidance notes -->
+                    <div id="guidance-card" class="card text-white bg-info mb-3" style="max-width: 100%">
+                        <div class="card-header">Instruksi</div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                1. Sebelum menjawab pertanyaan pada kuesioner ini, harap menyelesaikan task pada 
+                                <a href="your-link-url-here" target="_blank">link berikut</a>.
+                            </p>
+                            <p class="card-text">
+                                2. Harap mengisi seluruh pertanyaan di kuesioner ini sebelum menekan tombol submit.
+                            </p>
+                            <p class="card-text">
+                                3. Hasil kalkulasi nilai SUS Anda akan muncul setelah menekan tombol submit.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <!-- div with warning information -->
+                    <div hidden id="warning-card" class="card text-white bg-warning mb-3" style="max-width: 100%;">
+                    <div class="card-header">Warning</div>
+                        <div class="card-body">
+                            <p id="alert-text" class="card-text">Kamu perlu mengisi seluruh pertanyaan sebelum mengumpulkan.</p>
+                    </div>
+                    </div>
+                    
+                    <!-- div with outcome information -->
+                    <div hidden id="outcome-card" class="card text-white bg-success mb-3" style="max-width: 100%;">
+                    <div class="card-header">Result</div>
+                        <div class="card-body">
+                            <h3 id="theScore"></h3>
+                            <p id="outcome-note" class="card-text"></p>
+                            <h5 id="outcome-grade" class="card-text"></h5>
+                            <h5 id="outcome-adjective" class="card-text"></h5>
+                    </div>
+                </div>
+                
+            </div>
+        
+</div>
+        <!-- references for the page-->
+        <!-- <table id="refs" class="table">
+            <tr><th colspan="2">References</th></tr>
+            
+            <tr><td>[1]</td><td>Brooke, J. (1996). <a href="https://books.google.co.uk/books?id=IfUsRmzAqvEC&lpg=PA189&ots=GaqvH8nq1p&lr&pg=PA189#v=onepage&q&f=false">SUS-A quick and dirty usability scale</a>. <i>Usability evaluation in industry</i>, 189(194), 4-7.</td></tr>
+
+            <tr><td>[2]</td><td>Sauro, J. (2011). <a href="http://uxpamagazine.org/sustified/">SUStisfied? Little-known System Usability Scale facts.</a> <i>User Experience: The Magazine of the User Experience Professionals Association</i>, 10(3). [Last accessed: 9 March 2020].</td></tr>
+
+            <tr><td>[3]</td><td>Bangor, A., Kortum, P. and Miller, J. (2009). <a href="https://dl.acm.org/doi/10.5555/2835587.2835589">Determining what individual SUS scores mean: Adding an adjective rating scale</a>. <i>Journal of usability studies</i>, 4(3), 114-123.</td></tr>    
+        </table> -->
+        
+        
+        <!-- author info
+        <div style="text-align: center;">
+            <span class="badge badge-light">Created by <a href="https://twitter.com/stuartaffect">@StuartAffect</a> - 2020.</span>
+        </div> -->
+    </div>
+    
+
+    <!-- JS for the calculation / adjustments -->
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body>
+
+</html>
