@@ -21,7 +21,27 @@
     <title>Kuesioner System Usability Scale (SUS)</title>
 </head>
 
-
+<script>
+    (function (m, a, z, e) {
+        var s, t;
+        try {
+            t = m.sessionStorage.getItem('maze-us');
+        } catch (err) {}
+        
+        if (!t) {
+            t = new Date().getTime();
+            try {
+            m.sessionStorage.setItem('maze-us', t);
+            } catch (err) {}
+        }
+        
+        s = a.createElement('script');
+        s.src = z + '?t=' + t + '&apiKey=' + e;
+        s.async = true;
+        a.getElementsByTagName('head')[0].appendChild(s);
+        m.mazeUniversalSnippetApiKey = e;
+    })(window, document, 'https://snippet.maze.co/maze-universal-loader.js', '659ea0b6-6570-4021-9863-48cce60610a4');
+</script>
 <body>
     <div class="container-fluid py-3 px-15">
                 <h2 style="text-align: center;">Kuesioner System Usability Scale (SUS) </h2>
